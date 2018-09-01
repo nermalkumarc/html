@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="RGraph.line.js"></script>
+	<script src="RGraph.common.core.js"></script>
+</head>
+<body>
+<canvas id="int" width="700" height="500" style=""></canvas>
+<script>
+	var bar=new RGraph.Line('int',[10,50,30,5,70,90,20]);
+	bar.Set('chart.colors',['violet']);
+	bar.Set('chart.title',"Report");
+	bar.Set('chart.labels',["sun","mon","tue","wed","thur","fri","sat"]);
+	bar.Draw();
+
+</script>
+
+</body>
+</html>

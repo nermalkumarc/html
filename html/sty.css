@@ -1,0 +1,109 @@
+a
+{
+	text-decoration: none;
+}
+
+
+
+a:link
+{
+	color:blue;
+}
+
+a:visited
+{
+	color:pink;
+	text-decoration: line-through;
+}
+
+a:hover
+{
+	color:yellow;
+	
+}
+a:active
+{
+	color:green;
+}
+
+
+h2
+{
+	visibility:hidden;
+}
+
+#a
+{
+position:absolute;
+left: 0px;
+top: 0px;
+
+
+	width: 150px;
+	height: 150px;
+	background: black;
+
+animation-name: niit;
+animation-duration:5s; 
+animation-iteration-count: infinite; 
+animation-direction: alternate-reverse;
+
+}
+
+@keyframes niit 
+{
+0%{width: 150px;height: 150px;background: black;left:0px;top: 0px;transform: rotateX(180deg); }
+25%{width: 200px;height: 200px;background: green;left:200px;top: 0px;tr }
+50%{width: 50px;height: 50px;background: blue;left:200px;top: 200px; }
+75%{width: 100px;height: 100px;background: orange;left:0px;top: 200px; }
+100%{width: 150px;height: 150px;background: black;left:0px;top: 0px; }
+}
+
+/*#b
+{
+position:absolute;
+left: 0px;
+top: 150px;
+
+
+	width: 150px;
+	height: 150px;
+	background:black;
+}
+*/
+
+
+table
+{
+	border-collapse: collapse;
+
+}
+
+td,th
+{
+	padding: 15px;
+	text-align: center;
+}
+
+th
+{
+	color:green;
+}
+
+td
+{
+	color:blue;
+}
+
+
+tr:nth-child(even)
+{
+background: orange;
+}
+
+div+p
+{
+
+	color:blue;
+}
+

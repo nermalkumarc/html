@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<canvas id="myca" width="400" height="300"
+style="border:1px solid #d3d3d3;background:maroon">
+Your browser does not support the canvas element.
+</canvas>
+
+
+<script type="text/javascript">
+	
+var vas=document.getElementById('myca');
+var ctx=vas.getContext("2d");
+
+var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"green");
+grd.addColorStop(0.2,"blue");
+grd.addColorStop(0.5,"yellow");
+grd.addColorStop(0.7,"white");
+grd.addColorStop(1,"black");
+
+ctx.strokeStyle=grd;
+ctx.font = "50px Viner Hand ITC";
+ctx.strokeText("Integra",50,50);
+
+
+
+
+
+</script>
+</body>
+</html>
